@@ -1,0 +1,4 @@
+- env for credentials
+- validation
+- helper functions
+- REPLACE JWT SECRET KEY
