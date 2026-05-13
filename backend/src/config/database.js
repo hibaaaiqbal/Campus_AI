@@ -1,9 +1,9 @@
+import dotenv from "dotenv";
+dotenv.config();
 import mongoose from "mongoose";
 
 export async function connectDB(){
-    await mongoose.connect(
-  "mongodb+srv://Akshara_Kaushik:Mahi%401234@campusassistantdb.tbksvrt.mongodb.net/CampusAssistantDB?retryWrites=true&w=majority"
-);
+   await mongoose.connect(process.env.MONGO_URI);
 }
 
 // move to env file
